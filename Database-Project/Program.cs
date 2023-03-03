@@ -17,7 +17,8 @@ class program {
         string tmp = p.database(); 
         Console.WriteLine("Hello, World!"+p);
         Console.WriteLine("enter url request:");
-        string url = Console.ReadLine();
+        //  string url = Console.ReadLine(); 
+        string url = "https://api.pathfinder2.fr.v1/pf2";
         string html = string.Empty;
 
 
@@ -32,7 +33,7 @@ class program {
             html = reader.ReadToEnd();
         }
 
- 
+        Console.WriteLine(html);
 
     } 
 
